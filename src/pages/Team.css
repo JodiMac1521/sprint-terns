@@ -1,0 +1,326 @@
+.team-hero {
+  position: relative;
+  padding: 160px 0 100px;
+  overflow: hidden;
+}
+
+.team-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 60% at 70% -10%, rgba(255,85,0,0.1) 0%, transparent 65%),
+    radial-gradient(ellipse 30% 40% at 10% 90%, rgba(255,85,0,0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.team-headline {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin: 16px 0 24px;
+  max-width: 560px;
+}
+
+.team-sub {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+.team-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+/* AI TALENT */
+.ai-talent-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.ai-talent-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.ai-talent-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.talent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.talent-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.talent-chip:hover {
+  border-color: rgba(255,85,0,0.3);
+  color: var(--white);
+}
+
+/* LEADERS */
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.leader-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.leader-card:hover {
+  border-color: rgba(255,85,0,0.25);
+  background: var(--bg-hover);
+}
+
+.leader-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.leader-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.leader-title {
+  font-size: 13px;
+  color: var(--orange);
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.leader-bio {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* PLATFORM PREVIEW */
+.platform-preview-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 56px;
+}
+
+.platform-preview-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.pp-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pp-dots { display: flex; gap: 6px; }
+
+.hc-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+.hc-dot.red { background: #ff5f57; }
+.hc-dot.yellow { background: #ffbd2e; }
+.hc-dot.green { background: #28c940; }
+
+.pp-body { padding: 20px; }
+
+.pp-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pp-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.pp-val {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.pp-lbl {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pp-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 16px;
+}
+
+.pp-sprints {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pp-sprint-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.pp-sprint-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #28c940;
+  flex-shrink: 0;
+}
+
+.pp-sprint-row span:nth-child(2) { flex: 1; }
+
+.sprint-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+.sprint-badge.green { background: rgba(40,201,64,0.12); color: #28c940; }
+
+.pp-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* CAREERS */
+.careers-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 56px;
+  align-items: start;
+}
+
+.open-roles h4 {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.role-item:hover { border-color: rgba(255,85,0,0.3); }
+
+.role-link {
+  font-size: 13px;
+  color: var(--orange);
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.role-link:hover { opacity: 0.8; }
+
+@media (max-width: 960px) {
+  .ai-talent-card { grid-template-columns: 1fr; }
+  .leaders-grid { grid-template-columns: 1fr; }
+  .platform-preview-inner { grid-template-columns: 1fr; }
+  .careers-card { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .platform-preview-inner,
+  .careers-card { padding: 32px 24px; }
+  .talent-grid { grid-template-columns: repeat(2, 1fr); }
+}
